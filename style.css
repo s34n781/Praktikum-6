@@ -1,6 +1,7 @@
 body {
     display: grid;
     margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f6f6f6;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: 
@@ -95,9 +96,12 @@ header {
 .text {
     display: flex;
     width: 100%;
+    font-size: 13px;
 }
 
 .profile img {
+    margin: 10px;
+    margin-top: 15px;
     height: 40px;
     border-radius: 20px;
 }

@@ -5,9 +5,10 @@ body {
 
 header {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
+    background-color: #fef5f0;
     font-weight: bold;
 }
 
@@ -22,8 +23,10 @@ header {
     margin-bottom: auto;
 }
 
-.icon h1 {
-    margin: 0;
+.icon p {
+    font-size: x-large;
+    margin-top: auto;
+    margin-bottom: auto;
     color: chocolate;
     padding-left: 10px;
 }
@@ -36,19 +39,38 @@ header {
 }
 
 .navlist li {
-    color: chocolate;
     display: inline;
+}
+
+a {
     padding: 10px 10px;
+    text-decoration: none;
+    color: chocolate;
+}
+
+.navlist li a:hover {
+    background-color: #ddd;
+    border-radius: 20px;
+    color: red;
+}
+
+@media (max-width: 500px) {
+    .icon, .navlist {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .homepage{
     color: white;
+    background-color: black;
 }
 
 .front {
-    margin-top: 20%;
+    margin-top: 145px;
+    padding-left: 40px;
+    padding-right: 40px;
     text-align: center;
-    font-weight: bold;
     position: absolute;
     left: 0;
     right: 0;
@@ -68,23 +90,27 @@ header {
 }
 
 .back {
+    height: 500px;
+    background-position-y: center;
+    background-position-x: center;
+    background-image: url('./img/es-teler.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
     padding: 0;
     position: relative;
     top: 0;
     z-index: 0;
-    background-color: black;
-}
-
-.back img {
-    width: 100%;
-    opacity: 50%;
 }
 
 .about, .price-list{
-    margin: 100px;
+    padding: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section-title {
+    margin-bottom: 20px;
     color: chocolate;
     text-align: center;
     font-size: x-large;
@@ -97,23 +123,39 @@ hr {
 }
 
 .about-content {
+    margin-top: 30px;
     display: flex;
+    justify-content: space-between;
     gap: 30px;
 }
 
 .about-text{
-    flex: 1fr;
+    flex: 50%;
+}
+
+.about-text h3{
+    margin-top: 0;
 }
 
 .about-image {
-    flex: 1fr;
-    height: 70px;
+    display: flex;
+    flex: 50%;
+    justify-content: center;
 }
 
 .about-image img {
     border-radius: 10px;
-    width: auto;
-    height: 350px;
+    width: 100%;
+}
+
+@media (max-width: 1180px) {
+    .about-content {
+        flex-wrap: wrap;
+    }
+}
+
+.price-list {
+    background-color: #fef5f0;
 }
 
 table {
@@ -121,14 +163,20 @@ table {
     font-weight: bold;
 }
 
-thead {
+th {
     background-color: chocolate;
     color: white;
+    text-align: left;
 }
 
 th, tr, td {
+    padding: 10px;
     border: none;
     border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
 }
 
 .size-cell{
@@ -139,13 +187,84 @@ th, tr, td {
      width: 1fr;
 }
 
+@media (max-width: 800px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
 footer {
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
     background-color: chocolate;
-    text-align: center;
     color: white;
 }
 
-footer hr{
-    border-color: white;
+.footer-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-info, .footer-form {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+@media (max-width: 965px) {
+    .footer-container {
+        text-align: center;
+    }
+    .footer-info, .footer-form {
+        margin: auto;
+    }
+}
+
+.footer-form{
     width: 50%;
+}
+
+@media (max-width: 800px) {
+    .footer-form {
+        width: 275px;
+    }
+}
+
+.footer-form input{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.info {
+    width: 100%;
+}
+
+#tombol {
+    width: 100px;
+    background-color: #fef5f0;
+    color: chocolate;
+    font-weight: bold;
+}
+
+#tombol:hover {
+    background-color: #ddd;
+}
+
+footer hr{
+    width: 100%;
+    border-bottom: 1px solid white;
+}
+
+.copyright {
+    margin-top: 30px;
+    text-align: center;
 }

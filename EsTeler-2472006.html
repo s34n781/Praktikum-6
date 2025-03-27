@@ -10,11 +10,11 @@
     <header>
         <div class="icon">
             <img src="./img/logo.jpg">
-            <h1>Es Teler Enak</h1>
+            <p>Es Teler Enak</p>
         </div>
         <ul class="navlist">
-            <li>Tentang Kami</li>
-            <li>Daftar Harga</li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li><a href="#price">Daftar Harga</a></li>
         </ul>
     </header>
     <section class="homepage">
@@ -22,18 +22,18 @@
             <div class="isi">
                <h1>Es Teler dan Buah Premium</h1>
                <p>Nikmati kesegaran es teler dan es buah dengan bahan-bahan berkualitas yang menyegarkan hari Anda!</p>
-               <input type="button" value="Lihat Harga">
+               <a href="#price"><input type="button" value="Lihat Harga"></a>
             </div>
         </div>
         <div class="back">
-            <img src="./img/es-teler.jpg">
+            <!--<img src="./img/es-teler.jpg">-->
         </div>
     </section>
     
     <!-- Tentang Kami -->
     <section class="about" id="about">
         <div class="section-title">
-            Tentang Kami
+            <a target="about">Tentang Kami</a>
             <hr>
         </div>
         <div class="about-content">
@@ -48,14 +48,14 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Daftar Harga -->
     <section class="price-list" id="price">
         <div class="section-title">
-            Daftar Harga
+            <a target="price">Daftar Harga</a>
             <hr>
         </div>
-        <table class="price-table">
+        <table class="price-table" cellspacing="0">
             <thead>
                 <tr>
                     <th>Menu</th>
@@ -73,7 +73,48 @@
                     <td class="price-cell">Rp 25.000</td>
                     <td class="price-cell">Rp 45.000</td>
                 </tr>
-                
+                <tr>
+                    <td class="size-cell">Es Teler Durian</td>
+                    <td class="price-cell">Rp 22.000</td>
+                    <td class="price-cell">Rp 25.000</td>
+                    <td class="price-cell">Rp 35.000</td>
+                    <td class="price-cell">Rp 65.000</td>
+                </tr>
+                <tr>
+                    <td class="size-cell">Es Teler Mangga</td>
+                    <td class="price-cell">Rp 17.000</td>
+                    <td class="price-cell">Rp 20.000</td>
+                    <td class="price-cell">Rp 28.000</td>
+                    <td class="price-cell">Rp 52.000</td>
+                </tr>
+                <tr>
+                    <td class="size-cell">Es Teler Kacang Merah</td>
+                    <td class="price-cell">Rp 17.000</td>
+                    <td class="price-cell">Rp 20.000</td>
+                    <td class="price-cell">Rp 28.000</td>
+                    <td class="price-cell">Rp 50.000</td>
+                </tr>
+                <tr>
+                    <td class="size-cell">Es Teler Segar</td>
+                    <td class="price-cell">Rp 14.000</td>
+                    <td class="price-cell">Rp 16.000</td>
+                    <td class="price-cell">Rp 22.000</td>
+                    <td class="price-cell">Rp 42.000</td>
+                </tr>
+                <tr>
+                    <td class="size-cell">Es Teler Yoghurt</td>
+                    <td class="price-cell">Rp 17.000</td>
+                    <td class="price-cell">Rp 20.000</td>
+                    <td class="price-cell">Rp 28.000</td>
+                    <td class="price-cell">Rp 52.000</td>
+                </tr>
+                <tr>
+                    <td class="size-cell">Es Teler Special</td>
+                    <td class="price-cell">Rp 20.000</td>
+                    <td class="price-cell">Rp 24.000</td>
+                    <td class="price-cell">Rp 32.000</td>
+                    <td class="price-cell">Rp 60.000</td>
+                </tr>
             </tbody>
         </table>
     </section>
@@ -86,8 +127,10 @@
                 <p>✉️ info@estelerenaksekali.com</p>
             </div>
             <div class="footer-form">
-                Berlangganan Info Promo
-                ...
+                <h3>Berlangganan Info Promo</h3>
+                <input type="text" name="nama" placeholder="Nama Anda" class="info"><br>
+                <input type="email" name="email" placeholder="Email Anda" class="info"><br>
+                <input type="button" value="Langganan" id="tombol">
             </div>
         </div>
         <hr>

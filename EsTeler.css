@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.icon {
+    display: flex;
+    align-items: baseline;
+}
+
+.icon img {
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.icon h1 {
+    margin: 0;
+    color: chocolate;
+    padding-left: 10px;
+}
+
+.navlist {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navlist li {
+    color: chocolate;
+    display: inline;
+    padding: 10px 10px;
+}
+
+.homepage{
+    color: white;
+}
+
+.front {
+    margin-top: 20%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.front input {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: chocolate;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+}
+
+.back {
+    padding: 0;
+    position: relative;
+    top: 0;
+    z-index: 0;
+    background-color: black;
+}
+
+.back img {
+    width: 100%;
+    opacity: 50%;
+}
+
+.about, .price-list{
+    margin: 100px;
+}
+
+.section-title {
+    color: chocolate;
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+hr {
+    width: 50px;
+    border: 1px solid chocolate;
+}
+
+.about-content {
+    display: flex;
+    gap: 30px;
+}
+
+.about-text{
+    flex: 1fr;
+}
+
+.about-image {
+    flex: 1fr;
+    height: 70px;
+}
+
+.about-image img {
+    border-radius: 10px;
+    width: auto;
+    height: 350px;
+}
+
+table {
+    width: 100%;
+    font-weight: bold;
+}
+
+thead {
+    background-color: chocolate;
+    color: white;
+}
+
+th, tr, td {
+    border: none;
+    border-collapse: collapse;
+}
+
+.size-cell{
+    color: chocolate;
+}
+
+.price-cell {
+     width: 1fr;
+}
+
+footer {
+    background-color: chocolate;
+    text-align: center;
+    color: white;
+}
+
+footer hr{
+    border-color: white;
+    width: 50%;
+}
